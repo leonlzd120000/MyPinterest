@@ -16,6 +16,7 @@
 		35D1CC9C217F4FD900FCF358 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35D1CC9B217F4FD900FCF358 /* GoogleService-Info.plist */; };
 		35D1CC9E217F56DB00FCF358 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1CC9D217F56DB00FCF358 /* RegisterViewController.swift */; };
 		35D1CCA0217F56EC00FCF358 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1CC9F217F56EC00FCF358 /* LoginViewController.swift */; };
+		35D1CCA22180B94B00FCF358 /* DefaultImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 35D1CCA12180B94B00FCF358 /* DefaultImage.png */; };
 		96894CC6554A86A2D6AF49D5 /* Pods_MyInstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75209B756E4236E9F7F64A2D /* Pods_MyInstagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		35D1CC9B217F4FD900FCF358 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		35D1CC9D217F56DB00FCF358 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		35D1CC9F217F56EC00FCF358 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		35D1CCA12180B94B00FCF358 /* DefaultImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DefaultImage.png; sourceTree = "<group>"; };
 		46BC06B5953B909DF3E3012E /* Pods-MyInstagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyInstagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyInstagram/Pods-MyInstagram.debug.xcconfig"; sourceTree = "<group>"; };
 		75209B756E4236E9F7F64A2D /* Pods_MyInstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyInstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -76,6 +78,7 @@
 				35D1CC9F217F56EC00FCF358 /* LoginViewController.swift */,
 				35D1CC8B217E1D8B00FCF358 /* Main.storyboard */,
 				35D1CC8E217E1D8D00FCF358 /* Assets.xcassets */,
+				35D1CCA12180B94B00FCF358 /* DefaultImage.png */,
 				35D1CC90217E1D8D00FCF358 /* LaunchScreen.storyboard */,
 				35D1CC93217E1D8D00FCF358 /* Info.plist */,
 				35D1CC9B217F4FD900FCF358 /* GoogleService-Info.plist */,
@@ -163,6 +166,7 @@
 				35D1CC92217E1D8D00FCF358 /* LaunchScreen.storyboard in Resources */,
 				35D1CC9C217F4FD900FCF358 /* GoogleService-Info.plist in Resources */,
 				35D1CC8F217E1D8D00FCF358 /* Assets.xcassets in Resources */,
+				35D1CCA22180B94B00FCF358 /* DefaultImage.png in Resources */,
 				35D1CC8D217E1D8B00FCF358 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,12 +183,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyInstagram/Pods-MyInstagram-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,4 +8,6 @@ target 'MyInstagram' do
   # Pods for MyInstagram
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
 end

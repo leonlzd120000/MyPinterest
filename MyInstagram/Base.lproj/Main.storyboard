@@ -167,27 +167,50 @@
         <!--Upload-->
         <scene sceneID="2gJ-fM-K1I">
             <objects>
-                <viewController id="MrA-WE-Bdd" sceneMemberID="viewController">
+                <viewController id="MrA-WE-Bdd" customClass="UploadVC" customModule="MyInstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xo5-tw-5cr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="upload" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUR-Ib-2Q7">
-                                <rect key="frame" x="166" y="323" width="53" height="21"/>
+                                <rect key="frame" x="161" y="472" width="53" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WD6-05-04s">
+                                <rect key="frame" x="309" y="424" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Upload"/>
+                                <connections>
+                                    <action selector="postButtonClicked:" destination="MrA-WE-Bdd" eventType="touchUpInside" id="zdH-E7-tsZ"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0Zu-rh-Qv9">
+                                <rect key="frame" x="16" y="311" width="343" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DefaultImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="J0d-h9-TKE">
+                                <rect key="frame" x="0.0" y="42" width="375" height="261"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ISt-I4-iZK"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upload" id="JRO-WF-3Wo"/>
+                    <connections>
+                        <outlet property="postComment" destination="0Zu-rh-Qv9" id="W3p-LR-VTe"/>
+                        <outlet property="postImage" destination="J0d-h9-TKE" id="unP-4R-XxQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hij-uO-RHa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1079" y="866"/>
+            <point key="canvasLocation" x="1077.5999999999999" y="865.81709145427294"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="EHF-yj-Jug">
@@ -209,4 +232,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="DefaultImage.png" width="375" height="261"/>
+    </resources>
 </document>
